@@ -1,0 +1,84 @@
+/* Chota.css - https://jenil.github.io/chota */
+@import url("https://unpkg.com/chota@latest");
+
+/* Chota Config */
+:root {
+  --color-primary: #1a9f60;
+  --color-lightGrey: #d2d6dd;
+  --color-grey: #7e818b;
+  --color-darkGrey: #3f4144;
+  --color-error: #d43939;
+  --color-success: #28bd14;
+  --grid-maxWidth: 85rem;
+  --grid-margin: calc((100vw - var(--grid-maxWidth)) / 2);
+  --grid-gutter: 2rem;
+  --font-size: 1.8rem;
+  --font-family: "Helvetica Neue", sans-serif;
+}
+
+/* Base Utils */
+.flex {
+  display: flex;
+}
+.flex-container {
+  display: flex;
+  padding: 5vw var(--grid-margin);
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.flex-wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+.space-around {
+  justify-content: space-around;
+}
+
+/* Navbar.js CSS */
+.nav {
+  margin-bottom: 5rem;
+}
+.nav .brand {
+  font-weight: bold;
+}
+.nav-left {
+  margin-left: calc(var(--grid-margin) / 2);
+}
+.nav-right {
+  margin-right: calc(var(--grid-margin) / 2);
+}
+@media screen and (max-width: 899px) {
+  .nav-left {
+    margin-left: 1rem;
+  }
+  .nav-right {
+    margin-top: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+/* Section Styles */
+header {
+  padding: 1rem;
+}
+
+section {
+  padding: 5vw;
+}
+section#contents {
+  background: var(--color-lightGrey);
+  border-radius: 4px;
+  max-width: 40vw;
+  padding: 2vw;
+  margin: 5vw auto 1vw 2vw;
+  color: var(--color-darkGrey);
+}
+@media screen and (max-width: 899px) {
+  section#contents { max-width: 75vw; }
+}
+
+/* Footer.js CSS */
+footer {
+  background: var(--color-grey);
+  padding: 5vw;
+}
