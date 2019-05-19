@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "serve": "browser-sync start --server 'src' --files 'src' --single"
+  },
+  "dependencies": {
+    "browser-sync": "^2.26.5"
+  }
+}
